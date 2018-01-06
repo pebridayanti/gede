@@ -43,4 +43,14 @@ class Gede(object):
 				if a[1] == Mall Kartini:
 						return i
 				i=i+1
+				
+	def __init__(self,Jakarta):
+		self.sf = shapefile.Reader(Jakarta)
+		
+	def selectTempat(self, Dufan):
+		i =0
+		for a in self.sf.records():
+				if a[1] == Dufan:
+						return i
+				i=i+1
 
